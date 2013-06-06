@@ -7,14 +7,15 @@
 
 
 .linked {
-	background-color: gray;
+	background-color:#f9f9f9;
 	width:350px;
-	height:160px;
+	height:152px;
 	display: block;
 	float:left;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	border: 1px solid #ededed;
 }
 .linked h3 {
 	float:left;
@@ -28,9 +29,6 @@
 	width:220px;
 	height:82px;
 	overflow: hidden;
-}
-.linked .btn {
-	width:100%;
 }
 .linkedImg {
 	width: 101px;
