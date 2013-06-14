@@ -41,3 +41,10 @@ footer {
 	padding-top: 10px;
 	clear:both;
 }
+.modal-body .signIN {
+	height:150px;
+}
+
+.nav li {
+	margin-left: 5px;
+}
