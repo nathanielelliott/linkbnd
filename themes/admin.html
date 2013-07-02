@@ -39,25 +39,44 @@
                     </a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <a href="#filtER" role="button" data-toggle="modal" type="submit" class="btn">filter</a>
-                            <a href="#addData" role="button" data-toggle="modal" type="submit" class="btn">add</a>
-                            <a href="#setTINGS" role="button" data-toggle="modal" type="submit" class="btn">settings</a>
+                            <a href="#filtER" role="button" data-toggle="modal" type="submit" class="btn filteron"><i class="icon-filter"></i> filter</a>
+                            <a href="#addData" role="button" data-toggle="modal" type="submit" class="btn"><i class="icon-plus-sign"></i> add</a>
+                            <a href="#setTINGS" role="button" data-toggle="modal" type="submit" class="btn"><i class="icon-wrench"></i> settings</a>
                         </ul>
                         <form class="navbar-form pull-right">
-                            <a href="#signOUT" role="button" data-toggle="modal" type="submit" class="btn">sign out</a>
+                            <a href="#signOUT" role="button" data-toggle="modal" type="submit" class="btn"><i class="icon-remove-circle"></i> sign out</a>
                         </form>
                     </div><!--/.nav-collapse -->
                 </div>
             </div>
         </div>
-
+        <div class="container filterIT" style="display:none;">
+            <div class="row-fluid">
+                <div class="span4">
+                    <form class="form-search">
+                      <input type="text" class="input-medium search-query">
+                      <button type="submit" class="btn">Search</button>
+                    </form>
+                </div>
+                <div class="span8">
+                    <ul class="nav nav-pills">
+                        <li class="disabled"><a href="#">Filter by:</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Fun</a></li>
+                        <li><a href="#">Wage</a></li>
+                        <li><a href="#">Information</a></li>
+                        <li><a href="#">Internal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="container">
 
             <div class="linked span4">
                 <div class="linkedImg img-rounded"><img src="apple-touch-icon-114x114-precomposed.png"></div>
                 <h3>Title Area for Text</h3>
                 <p>Si enim ad populum me vocas, eum. Gerendus est mos, modo recte sentiat. Respondent extrema primis, media utrisque, omnia... omnibus. Est enim effectrix multarum et magnarum voluptatum.</p>
-                <button class="btn btn-inverse pull-left" style="width:90%;" type="button">Default button</button> <button class="btn btn-inverse pull-right" disabled="disabled" style="width:10%;" type="button"><i class="icon-check icon-white"></i></button>
+                <button class="btn btn-inverse pull-left" style="width:90%;" type="button">Default button</button> <button class="btn btn-inverse pull-right" style="width:10%;" type="button"><i class="icon-edit icon-white"></i></button>
             </div>
 
 
