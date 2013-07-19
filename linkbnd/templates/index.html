@@ -40,12 +40,19 @@
                     <div class="nav-collapse collapse">
                         {% if not user.is_anonymous() %}
                         <ul class="nav">
+<<<<<<< HEAD
                             <a href="#filtER" role="button" data-toggle="modal" type="submit" class="btn filteron"><i class="icon-filter"></i> filter</a>
                             <a href="#addData" role="button" data-toggle="modal" type="submit" class="btn"><i class="icon-plus-sign"></i> add</a>
                             <a href="#setTINGS" role="button" data-toggle="modal" type="submit" class="btn"><i class="icon-wrench"></i> settings</a>
                         </ul>
                         <form class="navbar-form pull-right">
                             <a href="#signOUT" role="button" data-toggle="modal" type="submit" class="btn"><i class="icon-remove-circle"></i> sign out</a>
+=======
+                            <li class="btn filteron"><i class="icon-filter"></i> filter</li>
+                        </ul>
+                        <form class="navbar-form pull-right">
+                            <a href="#signIN" role="button" data-toggle="modal" type="submit" class="btn"><i class="icon-wrench"></i> Settings</a>
+>>>>>>> 466f7cb6044b137bd703b26ad4d7a447bfdf5831
                         </form>
                         {% else %}
                         <ul class="nav">
@@ -87,16 +94,23 @@
                 <!--<div class="linkedImg img-rounded"><img src="{{ url_for('static', filename='apple-touch-icon-114x114-precomposed.png') }}"></div>-->
                 <h3>{{ card.title }}</h3>
                 <p>{{ card.description }}</p>
+<<<<<<< HEAD
                 {% if user.is_anonymous() %}
                 <a href="{{ card.url }}"><button class="btn btn-inverse pull-left" style="width:100%;" type="button">Go to {{ card.title }}</button></a>
                 {% else %}
                 <button class="btn btn-inverse pull-left" style="width:90%;" type="button">Default button</button> <button class="btn btn-inverse pull-right" style="width:10%;" type="button"><i class="icon-edit icon-white"></i></button>
                 {% endif %}
+=======
+                <a href="{{ card.url }}"><button class="btn btn-inverse pull-left" style="width:100%;" type="button">Go to {{ card.title }}</button></a>
+>>>>>>> 466f7cb6044b137bd703b26ad4d7a447bfdf5831
             </div>
             {% endfor %}
 
             <footer>
+<<<<<<< HEAD
                 <p></p>
+=======
+>>>>>>> 466f7cb6044b137bd703b26ad4d7a447bfdf5831
             </footer>
 
         </div> <!-- /container -->
