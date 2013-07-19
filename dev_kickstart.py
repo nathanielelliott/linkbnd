@@ -1,6 +1,6 @@
 import os
-from linkbnd import db, app
-from linkbnd.models import URLCard
+from linkbnd import db, app, flask_bcrypt
+from linkbnd.models import URLCard, User
 import linkbnd.config
 
 urls = [
@@ -21,5 +21,8 @@ os.remove(os.path.join(linkbnd.config._basedir, 'app.db'))
 db.create_all()
 for url in urls:
     db.session.add(url)
+user = User(email='mark@markcaudill.me',
+        password=flask_bcrypt.generate_password_hash(u'---P@ssw0rd1--'))
+db.session.add(user)
 db.session.commit()
 app.run(host='0.0.0.0', port=5000, debug=True)
